@@ -1,0 +1,20 @@
+.loadMoreBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+.loadMoreBtn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background-color: #3846ad;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}

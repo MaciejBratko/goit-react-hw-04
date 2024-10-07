@@ -1,0 +1,30 @@
+.imageGalleryContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imageGalleryList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imageGalleryList li {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.imageGalleryList img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imageGalleryList p {
+  text-align: center;
+  margin-top: 5px;
+}

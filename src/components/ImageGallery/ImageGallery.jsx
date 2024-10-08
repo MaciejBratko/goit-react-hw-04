@@ -1,16 +1,23 @@
-import css from "./ImageGallery.module.css";
-import ImageCard from "../ImageCard/ImageCard";
+import { forwardRef } from 'react';
+import ImageCard from '../ImageCard/ImageCard';
+import css from "./ImageGallery.module.css"
 
-const ImageGallery = ({ items, onImageClick }) => {
+const ImageGallery = forwardRef(({ items, onImageClick }, ref) => {
   return (
-    <div className={css.imageGalleryContainer}>
+    <div ref={ref} className={css.imageGalleryContainer}>
       <ul className={css.imageGalleryList}>
         {items.map((item) => (
-          <ImageCard key={item.id} image={item} onClick={onImageClick} />
+          <ImageCard
+            key={item.id}
+            image={item}
+            onClick={onImageClick}
+          />
         ))}
       </ul>
     </div>
   );
-};
+});
+
+ImageGallery.displayName = 'ImageGallery';
 
 export default ImageGallery;

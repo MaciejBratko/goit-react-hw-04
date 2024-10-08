@@ -1,7 +1,8 @@
 import { RotatingLines } from "react-loader-spinner";
 import css from "./Loader.module.css";
+import { memo } from 'react';
 
-const Loader = () => {
+const Loader = memo(() => {
   return (
     <div className={css.loaderContainer}>
       <RotatingLines
@@ -17,6 +18,8 @@ const Loader = () => {
       />
     </div>
   );
-};
+});
+
+Loader.displayName = 'Loader';
 
 export default Loader;
